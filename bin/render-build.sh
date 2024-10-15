@@ -1,8 +1,6 @@
-#!/bin/bash
-set -e
-
-# Install dependencies
+#!/usr/bin/env bash
+# exit on error set -o errexit
 bundle install
-
-# Precompile assets
-bin/rails assets:precompile
+bundle exec rake assets:precompile
+bundle exec rake assets:clean
+bundle exec rake db:migrate
