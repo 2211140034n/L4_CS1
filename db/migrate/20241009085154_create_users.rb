@@ -1,10 +1,10 @@
 class CreateUsers < ActiveRecord::Migration[7.1]
-  def change
-    create_table :users do |t|
-      t.string :uid,null: false, unique: true
-      t.string :pass,null: false 
+  #def change
+    #create_table :users do |t|
+    #  t.string :uid,null: false, unique: true
+     # t.string :pass,null: false 
 
-      t.timestamps
-    end
-  end
+     # t.timestamps
+   # end
+ # end
 end
